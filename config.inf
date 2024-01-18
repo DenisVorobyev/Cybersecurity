@@ -1,0 +1,95 @@
+[Unicode]
+Unicode=yes
+[Version]
+signature="$CHICAGO$"
+Revision=1
+
+[System Access]
+MinimumPasswordAge = 1
+MaximumPasswordAge = 60
+MinimumPasswordLength = 10
+PasswordComplexity = 1
+
+[Registry Values]
+"LockoutDuration"=dword:0000001e
+"LockoutBadCount"=dword:0000000a
+"ResetLockoutCount"=dword:0000001e
+
+[Registry Settings]
+"DisableNotificationCenter"=dword:00000001
+
+[Registry Keys]
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer\NoTileNotificationStacking=1
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer\NoToastApplicationNotification=1
+
+[Registry Keys]
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer\NoMSApplicationNotification=1
+
+[Registry Values]
+"UPnPMode"=dword:00000002
+
+[Services]
+UPnP Device Host=4,0,2
+RDP=3,0,4
+Telnet=1,4,1
+SNMP Trap=4,1,1
+Windows Event Collector=2,0,2
+Remote Registry=1,4,1
+
+[Windows Features]
+"TelnetClient"=off
+"TelnetServer"=off
+"SNMP"=off
+"RIPListener"=off
+"NFSServer"=off
+"IIS-WebServerRole"=off
+"IIS-WebServer"=off
+"IIS-CommonHttpFeatures"=off
+"IIS-WorldWideWebServices"=off
+"IIS-FTP"=off
+"IIS-FTPServer"=off
+"IIS-FTPManagement"=off
+"SMB1"=off
+
+[Shares]
+"ADMIN$"=1
+"C$"=1
+"IPC$"=1
+
+[Firewall Rules]
+"MicrosoftEdge"=0
+"Search"=0
+"CommsApps"=0
+"Photos"=0
+"Xbox"=0
+
+[UAC]
+"ConsentPromptBehaviorAdmin"=2
+"ConsentPromptBehaviorUser"=0
+"ElevateOnDoubleClick"=1
+"EnableLUA"=1
+"PromptOnSecureDesktop"=1
+"EnableVirtualization"=1
+
+[Audit Policy]
+"AuditLogonEvents"=3
+"AuditAccountLogon"=3
+"AuditAccountManagement"=3
+"AuditDSAccess"=3
+"AuditObjectAccess"=3
+"AuditPrivilegeUse"=3
+"AuditPolicyChange"=3
+"AuditSystemEvents"=3
+
+[Local Policies]
+"DisableCAD"=1
+"DisableSmartCardCRLCheck"=0
+"ForceUnlockLogon"=0
+"SecureDesktop"=1
+"FilterAdministratorToken"=0
+"FilterAdministratorToken_When_UAC_Is_Prompting"=0
+"LocalAccountTokenFilterPolicy"=0
+"EnableLinkedConnections"=0
+"EnableUIADesktopToggle"=0
+"EnableInstallerDetection"=0
+"ValidateAdminCodeSignatures"=0
